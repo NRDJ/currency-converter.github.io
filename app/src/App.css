@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+#nav {
+  background-color: rgb(21, 31, 114);
+}
+
+nav img {
+  width: 100px;
+}
+
+nav p {
+  color: white;
+  padding: 3px;
+  font-size: 40px;
+  font-weight: bold;
+}

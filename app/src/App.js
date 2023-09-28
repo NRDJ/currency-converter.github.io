@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import logo from './static/logo.png';
 import './App.css';
+
+const Navbar = () => {
+  return (
+  <nav id="nav" class="navbar">
+    <div class="container">
+      <img src={logo} class="img-fluid" alt=""></img>
+      <p>Currency Exchange Converter</p>
+      <a href=""><p>About</p></a>
+    </div>
+  </nav>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
     </div>
   );
 }
