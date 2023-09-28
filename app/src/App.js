@@ -6,7 +6,8 @@ const Navbar = () => {
   <nav id="nav" class="navbar">
     <div class="container">
       <img src={logo} class="img-fluid" alt=""></img>
-
+      <p>Currency Exchange Converter</p>
+      <a href=""><p>About</p></a>
     </div>
   </nav>
   );
