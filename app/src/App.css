@@ -37,6 +37,7 @@
   }
 }
 
+/*starts here*/
 #nav {
   background-color: rgb(21, 31, 114);
 }
@@ -50,4 +51,8 @@ nav p {
   padding: 3px;
   font-size: 40px;
   font-weight: bold;
+}
+
+#main-converter {
+  background-color: rgb(21, 31, 114);
 }
