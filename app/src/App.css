@@ -53,10 +53,11 @@ nav p {
   font-weight: bold;
 }
 
-#main-converter {
+#main-converter, #main-table, footer {
   background-color: rgb(21, 31, 114);
 }
 
-#main-table {
-  background-color: rgb(21, 31, 114);  
+.linkedin {
+  margin: 10px;
+  font-size: large;
 }

@@ -1,5 +1,11 @@
 import logo from './static/logo.png';
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
+
+const linkedin =<FontAwesomeIcon icon={faLinkedinIn} />
+const github =<FontAwesomeIcon icon={faGithub} />
+
 
 const Navbar = () => {
   return (
@@ -37,28 +43,6 @@ const Converter = () => {
 
 const Table = () => {
   return (
-    // <div class="container mt-5 mb-5 pb-3 pt-5" id="main-table">
-    //   <div class="row justify-content-center align-items-center g-2">
-    //     <div class="col text-center">
-    //       <h2>Base Currency:</h2>
-    //     </div>
-    //     <div class="col text-center">
-    //       <input class="" placeholder="$USD" type="text" id="fname" name="fname"></input>
-    //     </div>
-    //     <div class="col text-center">
-    //       <h2>Amount:</h2>
-    //     </div>
-    //     <div class="col text-center">
-    //       <input class="" placeholder="$1.00" type="text" id="fname" name="fname"></input>
-    //     </div>
-    //   </div>
-    // </div>
-    // <div class="container mt-5 mb-5 pb-3 pt-5" id="main-table" style="display: flex; flex-direction: row; align-items: center;">
-    //   <h2 style="margin-right: 10px;">Base Currency:</h2>
-    //   <input class="" placeholder="$USD" type="text" id="base-currency" name="base-currency"></input>
-    //   <h2 style="margin-left: 20px; margin-right: 10px;">Amount:</h2>
-    //   <input class="" placeholder="$1.00" type="text" id="amount" name="amount"></input>
-    // </div>
     <div class="container align-items-center mt-5 mb-5 pb-3 pt-5" id="main-table">
       <div class="row align-items-center text-center">
         <div class="col-1">
@@ -144,6 +128,22 @@ const Table = () => {
   );
 }
 
+const Footer = () => {
+  return (
+      <footer class="text-white py-4">
+        <div class="container">
+            <div class="text-center">
+              <h4>Contact and Links</h4>
+              <p>Email: nriedeldj@gmail.com</p>
+              <p>Phone: +56 9 6296 4643</p>
+              <a target="_blank" href="https://linkedin.com/in/nicolás-riedel-a13539156" class="text-white linkedin">{linkedin}</a>
+              <a target="_blank" href="https://github.com/NRDJ" class="text-white">{github}</a>
+            </div>
+          </div>
+      </footer>
+  );
+}
+
 const Main = () => {
   return (
     <div>
@@ -158,6 +158,7 @@ function App() {
     <div>
       <Navbar />
       <Main />
+      <Footer />
     </div>
   );
 }
