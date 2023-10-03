@@ -9,11 +9,19 @@ const github =<FontAwesomeIcon icon={faGithub} />
 
 const Navbar = () => {
   return (
-  <nav id="nav" class="navbar">
+  <nav id="nav" class="pb-2 pt-2">
     <div class="container">
-      <img src={logo} class="img-fluid" alt=""></img>
-      <p>Currency Exchange Converter</p>
-      <a href=""><p>About</p></a>
+      <div class="row align-items-center text-center">
+        <div class="col-4 text-start">      
+          <img src={logo} class="" alt=""></img>
+        </div>
+        <div class="col-4">      
+          <p>Currency Converter</p>
+        </div>
+        <div class="col-4 text-end">      
+          <a href=""><p>About</p></a>
+        </div>
+      </div>
     </div>
   </nav>
   );

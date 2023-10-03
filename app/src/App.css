@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,23 +35,78 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 /*starts here*/
+
+/* html */
+
+@media only screen and (max-width: 1601px) {
+  nav p  {
+    font-size: 36px;
+  }
+
+  nav img {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 1201px) {
+  nav p  {
+    font-size: 32px;
+  }
+
+  nav img {
+    width: 80px;
+  }
+}
+
+@media only screen and (max-width: 993px) {
+  nav p  {
+    font-size: 24px;
+  }
+
+  nav img {
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  nav p  {
+    font-size: 20px;
+  }
+
+  nav img {
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  nav p  {
+    font-size: 16px;
+  }
+
+  nav img {
+    width: 40px;
+  }
+}
+
+/* navbar section*/
 #nav {
   background-color: rgb(21, 31, 114);
 }
 
 nav img {
-  width: 100px;
+  max-width: 100px;
 }
 
 nav p {
   color: white;
-  padding: 3px;
-  font-size: 40px;
   font-weight: bold;
+  margin: 0; /* Remove default margins to improve spacing */
 }
+
+/* main section */
 
 #main-converter, #main-table, footer {
   background-color: rgb(21, 31, 114);
