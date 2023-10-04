@@ -49,10 +49,10 @@ const Converter = () => {
           <div class="col-5"><input class="w-75" placeholder="EUR" type="text" id="fname" name="fname"></input></div>
         </div>
         <div class="row justify-content-center align-items-center text-center g-2">
-          <div class="col mt-3"><h2>1 USD = X EUR</h2></div>
+          <div class="col mt-3"><p>1 USD = X EUR</p></div>
         </div>
       </div>
-      {/* ----------- */}
+      {/* Small size + */}
       <div class="container mt-5 mb-5 pb-3 pt-5 d-none d-sm-block" id="main-converter">
         <div class="row justify-content-center align-items-center text-center g-2">
           <div class="col-3">AMOUNT</div>
@@ -67,7 +67,7 @@ const Converter = () => {
           <div class="col-4"><input class="w-75" placeholder="EUR" type="text" id="fname" name="fname"></input></div>
         </div>
         <div class="row justify-content-center align-items-center text-center g-2">
-          <div class="col mt-3"><h2>1 USD = X EUR</h2></div>
+          <div class="col mt-3"><p>1 USD = X EUR</p></div>
         </div>
       </div>
     </div>
@@ -76,85 +76,151 @@ const Converter = () => {
 
 const Table = () => {
   return (
-    <div class="container align-items-center mt-5 mb-5 pb-3 pt-5" id="main-table">
-      <div class="row align-items-center text-center">
-        <div class="col-1">
+    <div>
+      <div class="container align-items-center mt-5 mb-5 pb-3 pt-5 d-md-none" id="main-table">
+        <div class="row align-items-center text-center">
+          <div class="col-6">
+            <p class="mr-2">Currency:</p>
+          </div>
+          <div class="col-6">
+            <input class="form-control" placeholder="$USD" type="text" id="base-currency" name="base-currency"></input>
+          </div>
         </div>
-        <div class="col-3">
-          <h2 class="mr-2">Base Currency:</h2>
+        <div class="row align-items-center text-center mt-2">
+          <div class="col-6">
+            <p class="ml-4 mr-2">Amount:</p>
+          </div>
+          <div class="col-6">
+            <input class="form-control" placeholder="$1.00" type="text" id="amount" name="amount"></input>
+          </div>
         </div>
-        <div class="col-2">
-          <input class="form-control" placeholder="$USD" type="text" id="base-currency" name="base-currency"></input>
-        </div>
-        <div class="col-3">
-          <h2 class="ml-4 mr-2">Amount:</h2>
-        </div>
-        <div class="col-2">
-          <input class="form-control" placeholder="$1.00" type="text" id="amount" name="amount"></input>
-        </div>
-        <div class="col-1">
+        <div class="row align-items-center text-center mt-4">
+          <div class="col-12">
+            <table class="table rounded-corners table-light">
+              <thead>
+                <tr>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">1 USD</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
-      <div class="row align-items-center text-center mt-4">
-        <div class="col-1">
+      {/* Medium size + */}
+      <div class="container align-items-center mt-5 mb-5 pb-3 pt-5 d-none d-md-block" id="main-table">
+        <div class="row align-items-center text-center">
+          <div class="col-1">
+          </div>
+          <div class="col-3">
+            <p class="mr-2">Currency:</p>
+          </div>
+          <div class="col-2">
+            <input class="form-control" placeholder="$USD" type="text" id="base-currency" name="base-currency"></input>
+          </div>
+          <div class="col-3">
+            <p class="ml-4 mr-2">Amount:</p>
+          </div>
+          <div class="col-2">
+            <input class="form-control" placeholder="$1.00" type="text" id="amount" name="amount"></input>
+          </div>
+          <div class="col-1">
+          </div>
         </div>
-        <div class="col-5">
-          <table class="table table-light">
-            <thead>
-              <tr>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">1 USD</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-5">
-          <table class="table table-light">
-            <thead>
-              <tr>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col-1">
+        <div class="row align-items-center text-center mt-4">
+          <div class="col-1">
+          </div>
+          <div class="col-5">
+            <table class="table rounded-corners table-light">
+              <thead>
+                <tr>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">1 USD</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-5">
+            <table class="table rounded-corners table-light">
+              <thead>
+                <tr>
+                  <th scope="col">First</th>
+                  <th scope="col">Last</th>
+                  <th scope="col">Handle</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-1">
+          </div>
         </div>
       </div>
     </div>
