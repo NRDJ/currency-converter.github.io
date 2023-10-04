@@ -20,7 +20,7 @@ const Navbar = () => {
           <p>Currency Converter</p>
         </div>
         <div class="col-4 text-end">      
-          <a href=""><p>About</p></a>
+          <p><a href="">About</a></p>
         </div>
       </div>
     </div>
@@ -227,28 +227,28 @@ const Table = () => {
   );
 }
 
-const Footer = () => {
-  return (
-      <footer class="text-white py-4">
-        <div class="container">
-            <div class="text-center">
-              <h4>Contact and Links</h4>
-              <p>Email: nriedeldj@gmail.com</p>
-              <p>Phone: +56 9 6296 4643</p>
-              <a target="_blank" href="https://linkedin.com/in/nicolás-riedel-a13539156" class="text-white linkedin">{linkedin}</a>
-              <a target="_blank" href="https://github.com/NRDJ" class="text-white">{github}</a>
-            </div>
-          </div>
-      </footer>
-  );
-}
-
 const Main = () => {
   return (
     <div>
       <Converter />
       <Table />
     </div>
+  );
+}
+
+const Footer = () => {
+  return (
+      <footer class="text-white py-4">
+        <div class="container">
+            <div class="text-center">
+              <p class="bold">Contact and Links</p>
+              <p class="small"><span class="bold">Email:</span> nriedeldj@gmail.com</p>
+              <p class="small"><span class="bold">Phone:</span> +56 9 6296 4643</p>
+              <a target="_blank" href="https://linkedin.com/in/nicolás-riedel-a13539156" class="text-white linkedin">{linkedin}</a>
+              <a target="_blank" href="https://github.com/NRDJ" class="text-white">{github}</a>
+            </div>
+          </div>
+      </footer>
   );
 }
 
