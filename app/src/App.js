@@ -1,11 +1,12 @@
 import logo from './static/logo.png';
 import './App.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedinIn, faGithub} from '@fortawesome/free-brands-svg-icons';
+import { faRightLeft } from '@fortawesome/free-solid-svg-icons';
 
 const linkedin =<FontAwesomeIcon icon={faLinkedinIn} />
 const github =<FontAwesomeIcon icon={faGithub} />
-
+const arrows = <FontAwesomeIcon icon={faRightLeft} />
 
 const Navbar = () => {
   return (
@@ -29,21 +30,45 @@ const Navbar = () => {
 
 const Converter = () => {
   return (
-    <div class="container mt-5 mb-5 pb-3 pt-5" id="main-converter">
-      <div class="row justify-content-center align-items-center text-center g-2">
-        <div class="col-3">AMOUNT</div>
-        <div class="col-4">FROM</div>
-        <div class="col-1"></div>
-        <div class="col-4">TO</div>
+    <div>
+      <div class="container mt-5 mb-5 pb-3 pt-5 d-sm-none" id="main-converter">
+        <div class="row justify-content-center align-items-center text-center g-2">
+          <div class="col-12">AMOUNT</div>
+        </div>
+        <div class="row justify-content-center align-items-center text-center g-2">
+          <div class="col-12"><input class="w-75" placeholder="$1.00" type="text" id="fname" name="fname"></input></div>
+        </div>
+        <div class="row justify-content-center align-items-center text-center g-2 mt-3">
+          <div class="col-5">FROM</div>
+          <div class="col-2"></div>
+          <div class="col-5">TO</div>
+        </div>
+        <div class="row justify-content-center align-items-center text-center g-2">
+          <div class="col-5"><input class="w-75" placeholder="$USD" type="text" id="fname" name="fname"></input></div>
+          <div class="col-2"><a name="" id="btn-arrows" class="btn btn-light" href="#" role="button">{arrows}</a></div>
+          <div class="col-5"><input class="w-75" placeholder="EUR" type="text" id="fname" name="fname"></input></div>
+        </div>
+        <div class="row justify-content-center align-items-center text-center g-2">
+          <div class="col mt-3"><h2>1 USD = X EUR</h2></div>
+        </div>
       </div>
-      <div class="row justify-content-center align-items-center text-center g-2">
-        <div class="col-3"><input class="w-75" placeholder="$1.00" type="text" id="fname" name="fname"></input></div>
-        <div class="col-4"><input class="w-75" placeholder="$USD" type="text" id="fname" name="fname"></input></div>
-        <div class="col-1"><a name="" id="" class="btn btn-light w-75" href="#" role="button"><span>&#8644;</span></a></div>
-        <div class="col-4"><input class="w-75" placeholder="EUR" type="text" id="fname" name="fname"></input></div>
-      </div>
-      <div class="row justify-content-center align-items-center text-center g-2">
-        <div class="col mt-3"><h2>1 USD = X EUR</h2></div>
+      {/* ----------- */}
+      <div class="container mt-5 mb-5 pb-3 pt-5 d-none d-sm-block" id="main-converter">
+        <div class="row justify-content-center align-items-center text-center g-2">
+          <div class="col-3">AMOUNT</div>
+          <div class="col-4">FROM</div>
+          <div class="col-1"></div>
+          <div class="col-4">TO</div>
+        </div>
+        <div class="row justify-content-center align-items-center text-center g-2">
+          <div class="col-3"><input class="w-75" placeholder="$1.00" type="text" id="fname" name="fname"></input></div>
+          <div class="col-4"><input class="w-75" placeholder="$USD" type="text" id="fname" name="fname"></input></div>
+          <div class="col-1"><a name="" id="btn-arrows" class="btn btn-light" href="#" role="button">{arrows}</a></div>
+          <div class="col-4"><input class="w-75" placeholder="EUR" type="text" id="fname" name="fname"></input></div>
+        </div>
+        <div class="row justify-content-center align-items-center text-center g-2">
+          <div class="col mt-3"><h2>1 USD = X EUR</h2></div>
+        </div>
       </div>
     </div>
   );
