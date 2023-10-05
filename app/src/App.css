@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,29 +35,123 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 /*starts here*/
-#nav {
-  background-color: rgb(21, 31, 114);
+
+/* html */
+
+html {
+  font-style: Monospace;
 }
 
+body {
+  background-color: #EBEBD3;
+  color: white;
+}
+
+a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+
+@media only screen and (max-width: 1601px) {
+  p  {
+    font-size: 34px;
+  }
+
+  nav img {
+    width: 100px;
+  }
+}
+
+@media only screen and (max-width: 1201px) {
+  p  {
+    font-size: 32px;
+  }
+
+  nav img {
+    width: 80px;
+  }
+}
+
+@media only screen and (max-width: 993px) {
+  p  {
+    font-size: 24px;
+  }
+
+  nav img {
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  p  {
+    font-size: 20px;
+  }
+
+  nav img {
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 546px) {
+  p  {
+    font-size: 16px;
+  }
+
+  nav img {
+    width: 40px;
+  }
+}
+
+/* navbar section*/
 nav img {
-  width: 100px;
+  max-width: 100px;
 }
 
 nav p {
-  color: white;
-  padding: 3px;
-  font-size: 40px;
   font-weight: bold;
+  margin: 0; /* Remove default margins to improve spacing */
 }
 
-#main-converter, #main-table, footer {
-  background-color: rgb(21, 31, 114);
+/* main section */
+.container {
+  border-radius: 10px;
+}
+
+nav { 
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+footer {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#main-converter, #main-table, nav, footer {
+  background-color: #083D77;
+}
+
+table.rounded-corners {
+  border-spacing: 0;
+  border-collapse: separate;
+  border-radius: 10px;
+  border: 1px solid black;
+ }
+
+/* footer */
+
+footer p {
+  margin: 2px;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 .linkedin {
   margin: 10px;
-  font-size: large;
 }
